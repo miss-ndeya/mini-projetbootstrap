@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body, .navbar{
+    background-color:  #b5bba4; 
+}
+
+.btn0{
+    border: none;
+    outline: none;
+    background-color: #3b3232e2;
+    color: #b5bba4;
+    height: auto;
+    width: 100px;
+}
+.btn:hover{
+    background-color: #3b3232e2;
+    color:  #b5bba4;
+    transition: 4s;
+}
+.btn0:hover, .btn2:hover{
+    background-color: #b5bba4;
+    color: #3b3232e2;
+    transition: 4s;
+}
+.btn{
+    border: 1px solid #3b3232e2;
+    width: 100px;
+    outline: none;
+
+}
+#acceuil{
+    /* background-image: url('images\ \(2\).jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #e8e8e8;
+    width: 100%;
+    object-fit: cover;
+    /* background-attachment: 20 fixed; */
+    background-position: center;
+    /* background-position-x: left center ; */
+      /* height: 500px;   */
+}
+#acceuil h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+input{
+    height: auto;
+    width: 40%;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+.btn2{
+    height: 45px;
+    width: 100px;
+    background-color: #3b3232e2;
+    color: #b5bba4;
+    border: none;
+    outline: none;
+}
