@@ -1,72 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/00ec292487.js" crossorigin="anonymous"></script>
     <!-- link bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- link bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
-integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top">
             <div class="container">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link px-4" href="#">Acceuil</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link px-4" href="#">Nos produits</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link px-4" href="#">Liste produit</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link px-4" href="#">Contact</a>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                    <button class="btn0 btn-outline" type="submit">connexion</button>
-                  <button class="btn btn-outline mx-2" type="submit">S'incrire</button>
-                </form>
-              </div>
-            </div>
-          </nav>
-          <div id="acceuil">
-            <div class="container py-5">
-                <div class="row py-5 align-items-center gy-4">
-                    <div class="col-12 col-md-6 text-center">
-                        <h1 class="fs mb-4">faites de votre maison un design moderne</h1>
-                        <form>
-                          <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Je recherche" aria-label="Je recherche" aria-describedby="basic-addon2">
-                           <button class="btn btn2">recherche</button>
-                          </div>
+                <a class="navbar-brand redressed" style="font-size: 25px;" href="#">Plaisir de l'interieur</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark  px-4" href="index.html">Acceuil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark px-4" href="produits.html">Nos produits</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link text-dark  px-4" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <a href="incription.html" type="button" class="btn0 btn btn-outline" type="submit">connexion</a>
+                        <button class="btn btn-outline mx-2" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">S'incrire</button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 id="offcanvasRightLabel" class="redressed">Me Connecter</h5>
+                                    <button type="button" class="btn-outline-0 border-0 bg-transparent" data-bs-dismiss="offcanvas">fermer</button>
+                            </div>
+                            <div class="offcanvas-body  d-flex justify-content-center flex-column">
+                                <div class="mb-4">
+                                    <input type="text" class="form-control" placeholder="Votre Email">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="password" class="form-control" placeholder="Votre Mot de Passe">
+                                </div>
+
+                                <div class="mb-4">
+                                    <button type="submit" class="fw-bold m-auto w-100 py-2 fs-6   border">
+                                        ME CONNECTER
+                                    </button>
+                                </div>
+
+                                <div class="mb-3">
+                                    <a href="#" class="text-decoration-none">
+                                        <p class="text-danger text-end">Mot de Passe Oublié ?</p>
+                                    </a>
+                                </div>
+
+
+                                <div class="">
+                                    <div>
+                                        <p class="text-center text-dark">Vous N'avez Pas De compte ?</p>
+                                    </div>
+                                    <div class=" mb-3 m-auto w-50">
+                                        <a href="incription.html" class="text-decoration-none">
+                                            <p class="text-dark text-center">Cree mon compte</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         </form>
                     </div>
-                    <div class="col-12 col-md-6 text-center">
-                     <img src="images (2).jpg" alt="" width="100%" srcset="">
-                  </div>
+                </div>
+        </nav>
+    </header>
+    <main>
+        <section id="Acceuil" class="align-items-center d-flex flex-column justify-content-center">
+            <div class="container align-items-center d-flex flex-column justify-content-center py-5">
+                <div class="row align-items-center d-flex flex-column justify-content-center">
+                    <div class="col-md-7 text-center py-5">
+                        <h1 class="redressed fw-blod">Plaisir de l'interieur</h1>
+                        <p class="font-size">Votre magasin décoration à Dakar pour créer des lieux de vie uniques, chaleureux et durables. Retrouvez tous les styles d'accessoires, de meubles et déco pour votre maison. Plaisir de l'interieur vous propose des articles de décoration variés et surtout de qualité.</p>
+                        <form class="col-9 mt-4 mx-auto">
+                            <div class="input-group flex-nowrap">
+                                <input type="text" style="font-size: 13px;" class="form-control py-2" placeholder="rechercer une produit" aria-label="Username" aria-describedby="addon-wrapping">
+                                <button type="button" class="input-group-text" id="addon-wrapping" ><i class="fa-solid fa-magnifying-glass"></i></button>
+                              </div>
+                        </form>
+
+                    </div>
                 </div>
             </div>
-          </div>
-    </header>
+        </section>
+        <section id="produit">
+            <div class="container py-5">
+                <h1 class="redressed">Nos produits</h1>
+                <div class="row py-4 justify-content-center align-items-center d-flex gy-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://diwanedecor.sn/wp-content/uploads/2022/11/JAMILA_00005-580x435.jpg" width="260" height="260"  style="object-fit: cover;" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <h5>Chambre à coucher</h5>
+                                    <p></p>
+                                  </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="cuisine.jpg" width="260" height="260" style="object-fit: cover;" class="card-img-top img-fluid"  alt="...">
+                            <div class="card-body">
+                              <div class="card-text">
+                                <h5>Nos cuisines</h5>
+                                <p></p>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="salon2.jpg" width="260" height="260" style="object-fit: cover;" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <div class="card-text align-items-center">
+                                    <h5>Salon</h5>
+                                    <p></p>
+                                  </div>
+                            </div>
+                          </div>
+                    </div>
+               
+             
+                </div>
+            </div>
+        </section>
+        <section id="produit-populaire">
+            <div class="container py-5">
+                <h1 class="redressed">Choix de nos clients</h1>
+                <div class="row py-4 gy-5">
+                   <div class="col-md-6">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade " data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active ">
+                            <img src="https://www.hestiasofa.ma/media/webp_image/catalog/product/cache/dd6f88f4ed60d195923b86001b25eb86/m/i/mississipi_noir_taupe_tiffany_front_view_1.webp" class="d-block w-75 mx-auto" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://diwanedecor.sn/wp-content/uploads/2023/02/WhatsApp-Image-2023-02-06-at-10.32.56-5-580x372.jpeg" class="d-block w-75 mx-auto" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://images4.memoiredimages.fr/user/images/galerie_you_cuisine_avec_ilot_central/idao.jpg" class="d-block w-75 mx-auto" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://diwanedecor.sn/wp-content/uploads/2023/02/WhatsApp-Image-2023-02-06-at-10.34.32-5-580x370.jpeg" class="d-block w-75 mx-auto" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://www.hestiasofa.ma/media/webp_image/catalog/product/cache/dd6f88f4ed60d195923b86001b25eb86/c/a/carmen-bouclette-verte-front_1.webp"class="d-block w-75 mx-auto" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://images4.memoiredimages.fr/user/images/galerie_you_cuisine_en_u/matiss.jpg"class="d-block w-75 mx-auto" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                   </div>
+                   <div class="col-md-6 align-items-center text-center">
+                    <h4 class="merriweather text-center mb-4">Plaisir de l'interieur</h4>
+                    <p class="text-center fon-size" >Diversité de modèles qui répondent à tous les goûts et en fonction de tous les besoins!</p>
+                    <a href="produit.html" type="button" class="btn0 btn btn-outline mt-3" type="submit">catalogue</a>
+                   </div>
+                </div>
+            </div>
+        </section>
+        <section id="Temoignages">
+            <div class="container">
+                <h1 class="mb-5 redressed">Temoignages clients</h1>
+                <div class="row text-center">
+                     <div class="col-lg-4">
+                        <img src="images (2).jpg" class="rounded-circle shadow-1-strong mb-3" width="150" height="150" alt="" aria-controls="#picker-editor">
+                        <h5 class="mb-3">Mariama Sarr</h5>
+                        <p class="text-center" style="font-size: 13px;">
+                            <i class="fas fa-quote-left pe-2"></i>
+                            <span>Je tiens à souligner le professionnalisme, la disponibilité et la fiabilité de la boutique. J'apprecie énormement, vos produits  car ils sont quasiement uniques je vous recommende vivement.</span>
+                            <i class="fas fa-quote-right pe-2"></i>
+                        </p>
+                        <ul class="list-unstyled d-flex justify-content-center text-black mb-5">
+                            <li> <i class="fas fa-star fa-sm "></i> </li>
+                            <li> <i class="fas fa-star fa-sm "></i> </li>
+                            <li> <i class="fas fa-star fa-sm "></i> </li>
+                            <li> <i class="fas fa-star fa-sm "></i> </li>
+                            <!-- <li> <i class="fas fa-star-half-alt fa-sm "></i>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTulTDBiVsE_EayS-tehMEVlS4xLDlIG5-yog&usqp=CAU" class="rounded-circle shadow-1-strong mb-3" width="150" height="150" alt="" aria-controls="#picker-editor">
+                        <h5 class="mb-3">Mr et Mrs Ndiaye</h5>
+                        <p class="text-center" style="font-size: 13px;">
+                            <i class="fas fa-quote-left pe-2"></i>
+                            <span>Chez Plaisir de l'interieur, nous avons trouvé notre bonheur vu l'embarras de choix que nous avions. La chambre  et la cuisine  que nous avons achetées nous conviennent parfaitement.</span>
+                            <i class="fas fa-quote-right pe-2"></i>
+                        </p>
+                        <ul class="list-unstyled d-flex justify-content-center text-black mb-5">
+                            <li> <i class="fas fa-star fa-sm "></i> </li>
+                            <li> <i class="fas fa-star fa-sm "></i> </li>
+                            <li> <i class="fas fa-star fa-sm "></i> </li>
+                            <li> <i class="fas fa-star fa-sm "></i> </li>
+                            <li> <i class="fas fa-star fa-sm "></i> </li>
+                            <!-- <li> <i class="fas fa-star-half-alt fa-sm "></i>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 ">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGO1SNemHPkUaT4bwo69X3e2O4WwMEk6U_RA&usqp=CAU" class="rounded-circle shadow-1-strong mb-3" width="150" height="150" alt="" aria-controls="#picker-editor">
+                        <h5 class="mb-3">Badou Seck</h5>
+                        <p class="text-center" style="font-size: 13px;">
+                            <i class="fas fa-quote-left pe-2"></i>
+                            <span>Très satisfait de mon achat, canapé 3 places de très bonne qualité et conforme à mes besoins. Bons renseignements, belle présentation des articles proposés et service très professionnel.</span>
+                            <i class="fas fa-quote-right pe-2"></i></p>
+                        <!-- </p><div class="des"> ""</div> -->
+                        <ul class="list-unstyled d-flex justify-content-center text-black mb-5">
+                            <li> <i class="fas fa-star fa-sm "></i> </li>
+                            <li> <i class="fas fa-star fa-sm "></i> </li>
+                            <li> <i class="fas fa-star fa-sm "></i> </li>
+                            <li> <i class="fas fa-star fa-sm "></i> </li>
+                            <li> <i class="fas fa-star-half-alt fa-sm "></i>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+            </div>
+        </section>
+                <!--footer-->
+                
+        <footer class="pt-5 footer">
+            <div class="container align-items-center text-start text-center">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-4 col-sm">
+						<h6 class="redressed ps-3 fs-5 text-white">Liens Utiles</h6>
+						<nav class="nav flex-column " style="font-size: 12px;">
+							<a class="nav-link py-1 merriweather fs-6 text-white active" aria-current="page" href="#">Acceuil</a>
+							<a class="nav-link py-1 merriweather fs-6 text-white" href="#">La marque</a>
+							<a class="nav-link py-1 merriweather fs-6 text-white" href="#">la boutique</a>
+						</nav>
+					</div>
+                    <div class="col-lg-3 col-md-6 mb-4 col-sm">
+                        <h6 class="redressed ps-3 fs-5 text-white">Informations Générales</h6>
+                        <nav class="nav flex-column">
+                            <a class="nav-link py-1 merriweather fs-6 text-white" href="#">Conditions générales de vente</a>
+                            <a class="nav-link py-1 merriweather fs-6 text-white" href="#">Politique de confidentialité</a>
+                        </nav>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 col-sm">
+                        <h6 class="redressed ps-3 fs-5 text-white">Service Client</h6>
+                        <nav class="nav flex-column">
+                            <a class="nav-link py-1 merriweather fs-6 text-white" href="#">Nous contacter</a>
+                            <a class="nav-link py-1 merriweather fs-6 text-white" href="#">FAQ</a>
+                            <a class="nav-link py-1 merriweather fs-6 text-white" href="#">Politique de retour</a>
+                            <a class="nav-link py-1 merriweather fs-6 text-white" href="#">livraison</a>
+                        </nav>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 col-sm">
+                        <h6 class="redressed ps-3 fs-5 text-white">Coordonnées</h6>
+                        <nav class="nav flex-column">
+                            <a class="nav-link py-1 merriweather fs-6 text-white" href="#">La marque</a>
+                            <a class="nav-link py-1 merriweather fs-6 text-white" href="#">La boutique</a>
+                            <a class="nav-link py-1 merriweather fs-6 text-white" href="#"></a>
+                            <a class="nav-link py-1 merriweather fs-6 text-white" href="#">livraison</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center text-white">
+                        <div>
+                            <p class="mb-4 merriweather">NOUS SUIVRE SUR :</p>
+                            <ul class="list-unstyled  d-flex justify-content-center mb-5">
+
+                                <a href="#" class=" panier text-decoration-none">
+                                    <li class="d-flex justify-content-center align-items-center bg-white py-2 px-2  mx-1 rounded-circle">
+                                        <i class="fa-brands fa-pinterest"></i>
+                                    </li>
+                                </a>
+
+                                <a href="#" class="panier text-decoration-none">
+                                    <li class="d-flex justify-content-center align-items-center bg-white py-2 px-2 mx-1 rounded-circle">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </li>
+                                </a>
+
+                                <a href="#" class="panier text-decoration-none">
+                                    <li class="d-flex justify-content-center align-items-center bg-white py-2 px-2 mx-1 rounded-circle">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </li>
+                                </a>
+
+                                <a href="#" class="panier text-decoration-none">
+                                    <li class="d-flex justify-content-center align-items-center bg-white py-2 px-2 mx-1  rounded-circle">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="text-light merriweather">Copyright ©2023 plaisir de l'interieur, tous les droits sont réservés</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
 </body>
+
 </html>

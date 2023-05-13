@@ -1,16 +1,52 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Merriweather:wght@300;400;700&display=swap');
+.redressed {
+	font-family: 'Redressed', cursive;
+}
+.merriweather {
+	font-family: 'Merriweather', serif;
+}
+/* *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
+} */
+.bg {
+   max-width: 350px;
+    object-fit: cover;   
 }
-body, .navbar{
-    background-color:  #b5bba4; 
+.panier{
+    color: #1c1616e2;
 }
-
+.detail-panier-1{
+   
+    border: 1px solid #1c1616e2;
+    color: #1c1616e2;
+    height: 100%;
+    transition: background-color .4s ease-out;
+    
+}
+.detail-panier-1:hover{
+    opacity: 1;
+    height: 100%;
+    background-color: #1c1616e2;
+    border: none;
+    color: #fff;
+  }
+.detail-panier-1:hover .panier{
+  
+  color: #fff;
+}
+.bg img{
+    width: 100%;
+    object-fit: cover;    
+}
+.footer{
+    background-color: #231a1ae2;
+}
 .btn0{
     border: none;
     outline: none;
-    background-color: #3b3232e2;
+    background-color: #1c1616e2;
     color: #b5bba4;
     height: auto;
     width: 100px;
@@ -31,26 +67,34 @@ body, .navbar{
     outline: none;
 
 }
-#acceuil{
-    /* background-image: url('images\ \(2\).jpg'); */
+.fon-size{
+    font-size: 20px;
+}
+#Acceuil{
+    background: url('https://media.istockphoto.com/id/1325341272/fr/photo/salon-blanc-moderne-avec-canap%C3%A9-table-basse-plante-de-cactus-et-suspension.jpg?b=1&s=170667a&w=0&k=20&c=kfYGF8XVGebi56n-8HYAEQ7R2L3sBTu23CHGC53o-ZU='); 
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #e8e8e8;
-    width: 100%;
-    object-fit: cover;
-    /* background-attachment: 20 fixed; */
-    background-position: center;
-    /* background-position-x: left center ; */
-      /* height: 500px;   */
+    background-attachment: fixed; 
+    background-position: center center;
+        height: 560px;    
 }
-#acceuil h1{
-    font-size: 3rem;
-    font-weight: 800;
+#Acceuil .font-size{
+    font-size: 14px;
 }
-
+@media screen and (max-width: 750px){
+    #Acceuil{
+        height: 330px;  
+    }
+    #Acceuil .font-size{
+        font-size: 9px;
+    }
+    .fon-size{
+        font-size: 14px;
+    }
+}
 input{
     height: auto;
-    width: 40%;
+    width: 40%; 
     padding: 10px;
     border: none;
     outline: none;

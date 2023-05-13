@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/00ec292487.js" crossorigin="anonymous"></script>
+    <!-- link bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- link bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand redressed" style="font-size: 25px;" href="#">Plaisir de l'interieur</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark  px-4" href="index.html">Acceuil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark px-4" href="produit.html">Nos produits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark  px-4" href="#">Liste produit</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark  px-4" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <a href="incription.html" type="button" class="btn0 btn btn-outline" type="submit">connexion</a>
+                        <button class="btn btn-outline mx-2" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">S'incrire</button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 id="offcanvasRightLabel" class="redressed">Me Connecter</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body  d-flex justify-content-center flex-column">
+                                <div class="mb-4">
+                                    <input type="text" class="form-control" placeholder="Votre Email">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="password" class="form-control" placeholder="Votre Mot de Passe">
+                                </div>
+
+                                <div class="mb-4">
+                                    <button type="submit" class="fw-bold m-auto w-100 py-2 fs-6   border">
+                                        ME CONNECTER
+                                    </button>
+                                </div>
+
+                                <div class="mb-3">
+                                    <a href="#" class="text-decoration-none">
+                                        <p class="text-danger text-end">Mot de Passe Oublié ?</p>
+                                    </a>
+                                </div>
+
+
+                                <div class="">
+                                    <div>
+                                        <p class="text-center text-dark">Vous N'avez Pas De compte ?</p>
+                                    </div>
+                                    <div class=" mb-3 m-auto w-50">
+                                        <a href="incription.html" class="text-decoration-none">
+                                            <p class="text-dark text-center">Cree mon compte</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+        </nav>
+    </header>
+  <main>
+    <section id="Acceuil" class="align-items-center d-flex flex-column justify-content-center">
+        <div class="container align-items-center d-flex flex-column justify-content-center py-5">
+            <div class="row align-items-center d-flex flex-column justify-content-center">
+                <div class="col-md-7 text-center py-5">
+                    <h1 class="redressed fw-blod">Plaisir de l'interieur</h1>
+                    <p style="font-size: 14px;">Votre magasin décoration à Dakar pour créer des lieux de vie uniques, chaleureux et durables. Retrouvez tous les styles d'accessoires, de meubles et déco pour votre maison. Plaisir de l'interieur vous propose des articles de décoration variés et surtout de qualité.</p>
+                    <form class="col-9 mt-4 mx-auto">
+                        <div class="input-group flex-nowrap">
+                            <input type="text" style="font-size: 13px;" class="form-control py-2" placeholder="rechercer une produit" aria-label="Username" aria-describedby="addon-wrapping">
+                            <button type="button" class="input-group-text" id="addon-wrapping" ><i class="fa-solid fa-magnifying-glass"></i></button>
+                          </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="chambre">
+        <div class="container pt-3">
+            <h2 class="blod redressed">Chambres à coucher</h2>
+            <p class="merriweather">Découvrez l'ensemble de nos chambres à coucher. Des chambres aux meubles modernes et adaptés à votre budget.</p>
+            <div class="row py-3 d-flex merriweather align-items-center justify-content-center">
+                <div class="col-lg-3 col-md-6 col-sm mb-4">
+                    <div class="card">
+                        <img src="https://diwanedecor.sn/wp-content/uploads/2022/11/JAMILA_00005-580x435.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <div class="card-text ">
+                                <h5>JAMILA</h5>
+                                <span>1.500.000 CFA</span>
+                                 <ul class="list-unstyled d-flex py-2   text-black">
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                     <!--<li> <i class="fas fa-star-half-alt fa-sm "></i>
+                                    </li> -->
+                                </ul> 
+                                <div class="d-flex justify-content-around" >
+                                    <a href="#offcanvasExample" type="button" data-bs-toggle="offcanvas" aria-controls="offcanvasExample" class="btn btn btn-outline me-2" type="submit">panier</a>                                      
+                                      <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                        <div class="offcanvas-header">
+                                          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Mon panier</h5>
+                                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                          <div>
+                                            <h2>JAMILA</h2>
+                                            <p>Prix : 1.500.000 CFA</p>
+                                           
+                                            <p> livraison : 6 000 CFA</p>
+                                            <p>Total : 1. 506 000 CFA </p>
+                                          </div>
+                                          <div class=" mt-3 d-flex">
+                                            <a href="contact.html" class="btn btn-secondary me-2" type="button">
+                                              Acheter
+                                            </a>
+                                            <a href="#" class="btn btn-light me-2" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                                                annuler
+                                              </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <a href="incription.html" type="button" class="btn btn btn-outline me-2" type="submit">Detail</a>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                </div>
+              <div class="col-lg-3 col-md-6 col-sm mb-4">
+                    <div class="card">
+                        <img src="images (4).jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <div class="card-text ">
+                                <h5>SARAH</h5>
+                                <span>1.850.000 CFA</span>
+                                 <ul class="list-unstyled d-flex py-2   text-black">
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                     <!--<li> <i class="fas fa-star-half-alt fa-sm "></i>
+                                    </li> --> 
+                                </ul>
+                                <div class="d-flex justify-content-around">
+                                    <a href="#offcanvasExample" type="button" data-bs-toggle="offcanvas" aria-controls="offcanvasExample" class="btn btn btn-outline me-2" type="submit">panier</a>                                      
+                                      <div class="offcanvas offcanvas-start  text-center" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                        <div class="offcanvas-header">
+                                          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Mon panier</h5>
+                                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                          <div>
+                                            <h2>SARAH</h2>
+                                            <p>Prix : 1.850.000 CFA</p>
+                                           
+                                            <p> livraison : 6 000 CFA</p>
+                                            <p>Total : 1. 856 000 CFA </p>
+                                          </div>
+                                          <div class=" mt-3 d-flex">
+                                            <a href="contact.html" class="btn btn-secondary me-2" type="button">
+                                              Acheter
+                                            </a>
+                                            <a href="#" class="btn btn-light me-2" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                                                annuler
+                                              </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <a href="incription.html" type="button" class="btn0 btn btn-outline me-2" type="submit">Detail</a>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                </div>
+                   <div class="col-lg-3 col-md-6 col-sm mb-4">
+                    <div class="card">
+                        <img src="images (5).jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body ">
+                            <div class="card-text">
+                                <h5>LISBONNE</h5>
+                                <span>1.500.000 CFA</span>
+                                 <ul class="list-unstyled d-flex  py-2   text-black">
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                     <!--<li> <i class="fas fa-star-half-alt fa-sm "></i>
+                                    </li> -->
+                                </ul>
+                                <div class="d-flex justify-content-around">
+                                    <a href="#offcanvasExample" type="button" data-bs-toggle="offcanvas" aria-controls="offcanvasExample" class="btn btn btn-outline me-2" type="submit">panier</a>                                      
+                                      <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                        <div class="offcanvas-header">
+                                          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Mon panier</h5>
+                                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                          <div>
+                                            <h2>SARAH</h2>
+                                            <p>Prix : 1.850.000 CFA</p>
+                                           
+                                            <p> livraison : 6 000 CFA</p>
+                                            <p>Total : 1. 856 000 CFA </p>
+                                          </div>
+                                          <div class=" mt-3 d-flex">
+                                            <a href="contact.html" class="btn btn-secondary me-2" type="button">
+                                              Acheter
+                                            </a>
+                                            <a href="#" class="btn btn-light me-2" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                                                annuler
+                                              </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <a href="incription.html" type="button" class="btn0 btn btn-outline me-2" type="submit">Detail</a>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm mb-4">
+                    <div class="card">
+                        <img src="images (3).jpg" class="card-img-top img-fluid"  alt="...">
+                        <div class="card-body  ">
+                            <div class="card-text">
+                                <h5>ASTA</h5>
+                                <span>1.600.000 CFA</span>
+                                 <ul class="list-unstyled d-flex  py-2   text-black">
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                     <!--<li> <i class="fas fa-star-half-alt fa-sm "></i>
+                                    </li> -->
+                                </ul>
+                                <div class="d-flex justify-content-around">
+                                    <a href="incription.html" type="button" class="btn btn btn-outline me-2" type="submit">panier</a>
+                                    <a href="incription.html" type="button" class="btn0 btn btn-outline me-2" type="submit">Detail</a>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cuisines">
+        <div class="container py-3 merriweather d-flex flex-column align-items-center justify-content-center">
+            <h2 class="blod">NOS CUISINES</h2>
+            <p class="merriweather text-center w-75 mx-auto" style="font-size: 14px;">Envie d’aménager une cuisine au design intemporel et aux finitions haut de gamme ? Découvrez un large choix de cuisines contemporaines qui vont créer une ambiance raffinée et apporter une touche de minimalisme chic dans votre intérieur.</p>
+            <div class="row py-3  ">
+                <div class="col-lg-3 col-md-6 col-sm mb-4">
+                    <div class="card">
+                        <img src="cuisine1.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <div class="card-text ">
+                                <h5>HORTENSIA</h5>
+                                <span>500.000 CFA</span>
+                                 <ul class="list-unstyled d-flex py-2   text-black">
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                     <!--<li> <i class="fas fa-star-half-alt fa-sm "></i>
+                                    </li> -->
+                                </ul> 
+                                <div class="d-flex justify-content-around" >
+                                    <a href="incription.html" type="button" class="btn btn btn-outline me-2" type="submit">panier</a>
+                                    <a href="incription.html" type="button" class="btn0 btn btn-outline me-2" type="submit">Detail</a>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                </div>
+               <div class="col-lg-3 col-md-6 col-sm mb-4">
+                    <div class="card">
+                        <img src="camaieu-nude_vuea_bd.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <div class="card-text ">
+                                <h5>CAMAIEU</h5>
+                                <span>850.000 CFA</span>
+                                 <ul class="list-unstyled d-flex py-2   text-black">
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                     <!--<li> <i class="fas fa-star-half-alt fa-sm "></i>
+                                    </li> -->
+                                </ul>
+                                <div class="d-flex justify-content-around">
+                                    <a href="incription.html" type="button" class="btn btn btn-outline me-2" type="submit">panier</a>
+                                    <a href="incription.html" type="button" class="btn0 btn btn-outline me-2" type="submit">Detail</a>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                </div> 
+                   <div class="col-lg-3 col-md-6 col-sm mb-4">
+                    <div class="card">
+                        <img src="cuisine3.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body ">
+                            <div class="card-text">
+                                <h5>MORVAN</h5>
+                                <span>800.000 CFA</span>
+                                 <ul class="list-unstyled d-flex  py-2   text-black">
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                     <!--<li> <i class="fas fa-star-half-alt fa-sm "></i>
+                                    </li> -->
+                                </ul>
+                                <div class="d-flex justify-content-around">
+                                    <a href="incription.html" type="button" class="btn btn btn-outline me-2" type="submit">panier</a>
+                                    <a href="incription.html" type="button" class="btn0 btn btn-outline me-2" type="submit">Detail</a>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm mb-4">
+                    <div class="card">
+                        <img src="cuisine4.jpg" class="card-img-top img-fluid"  alt="...">
+                        <div class="card-body  ">
+                            <div class="card-text">
+                                <h5>ADÉLIA & CAMAIEU</h5>
+                                <span>600.000 CFA</span>
+                                 <ul class="list-unstyled d-flex  py-2   text-black">
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                     <!--<li> <i class="fas fa-star-half-alt fa-sm "></i>
+                                    </li> -->
+                                </ul>
+                                <div class="d-flex justify-content-around">
+                                    <a href="incription.html" type="button" class="btn btn btn-outline me-2" type="submit">panier</a>
+                                    <a href="incription.html" type="button" class="btn0 btn btn-outline me-2" type="submit">Detail</a>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cuisines">
+        <div class="container py-3 merriweather d-flex flex-column align-items-center justify-content-center">
+            <h2 class="blod">NOS SALONS</h2>
+            <p class="merriweather text-center w-75 mx-auto" style="font-size: 14px;">Découvrez notre collection de salons à faible encombrement, innovantes,choisissez votre salon parmi de nombreux modèles et coloris.</p>
+            <div class="row py-3  ">
+                <div class="col-lg-3 col-md-6 col-sm mb-4">
+                    <div class="card">
+                        <img src="salon1.webp" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <div class="card-text ">
+                                <h5>SALON TIFFANY</h5>
+                                <span>850.000 CFA</span>
+                                 <ul class="list-unstyled d-flex py-2   text-black">
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                     <!--<li> <i class="fas fa-star-half-alt fa-sm "></i>
+                                    </li> -->
+                                </ul> 
+                                <div class="d-flex justify-content-around" >
+                                    <a href="incription.html" type="button" class="btn btn btn-outline me-2" type="submit">panier</a>
+                                    <a href="incription.html" type="button" class="btn0 btn btn-outline me-2" type="submit">Detail</a>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                </div>
+               <div class="col-lg-3 col-md-6 col-sm mb-4">
+                    <div class="card">
+                        <img src="salon2.webp" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <div class="card-text ">
+                                <h5>CANAPÉ CARMEN</h5>
+                                <span>770.000 CFA</span>
+                                 <ul class="list-unstyled d-flex py-2   text-black">
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                     <!--<li> <i class="fas fa-star-half-alt fa-sm "></i>
+                                    </li> -->
+                                </ul>
+                                <div class="d-flex justify-content-around">
+                                    <a href="incription.html" type="button" class="btn btn btn-outline me-2" type="submit">panier</a>
+                                    <a href="incription.html" type="button" class="btn0 btn btn-outline me-2" type="submit">Detail</a>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                </div> 
+                   <div class="col-lg-3 col-md-6 col-sm mb-4">
+                    <div class="card">
+                        <img src="salon3.webp" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body ">
+                            <div class="card-text">
+                                <h5>SALON STELLA</h5>
+                                <span>850.000 CFA</span>
+                                 <ul class="list-unstyled d-flex  py-2   text-black">
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                     <!--<li> <i class="fas fa-star-half-alt fa-sm "></i>
+                                    </li> -->
+                                </ul>
+                                <div class="d-flex justify-content-around">
+                                    <a href="incription.html" type="button" class="btn btn btn-outline me-2" type="submit">panier</a>
+                                    <a href="incription.html" type="button" class="btn0 btn btn-outline me-2" type="submit">Detail</a>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm mb-4">
+                    <div class="card">
+                        <img src="salon4.webp" class="card-img-top img-fluid"  alt="...">
+                        <div class="card-body  ">
+                            <div class="card-text">
+                                <h5>CARMEN VERT</h5>
+                                <span>770.000 CFA</span>
+                                 <ul class="list-unstyled d-flex  py-2   text-black">
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                    <li> <i class="fas fa-star fa-sm "></i> </li>
+                                     <!--<li> <i class="fas fa-star-half-alt fa-sm "></i>
+                                    </li> -->
+                                </ul>
+                                <div class="d-flex justify-content-around">
+                                    <a href="incription.html" type="button" class="btn btn btn-outline me-2" type="submit">panier</a>
+                                    <a href="incription.html" type="button" class="btn0 btn btn-outline me-2" type="submit">Detail</a>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </main>
+</body>
+
+</html>
